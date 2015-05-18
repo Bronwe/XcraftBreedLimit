@@ -50,6 +50,7 @@ public class EventListener extends XcraftEventListener {
 
 		list.add(Material.GOLDEN_CARROT);
 		list.add(Material.YELLOW_FLOWER);
+		breedItemList.put(EntityType.RABBIT, new ArrayList<Material>(list));
 		
 		list.clear();
 		list.add(Material.PORK);
