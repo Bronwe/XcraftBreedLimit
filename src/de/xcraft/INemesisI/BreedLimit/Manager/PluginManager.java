@@ -24,18 +24,6 @@ public class PluginManager extends XcraftPluginManager {
 		return (XcraftBreedLimit) plugin;
 	}
 
-	public Map<String, Map<EntityType, Integer>> getLicences() {
-		return licences;
-	}
-
-	public void setLicences(Map<String, Map<EntityType, Integer>> licences) {
-		this.licences = licences;
-	}
-
-	public Map<EntityType, Integer> getLicence(String player) {
-		return licences.get(player);
-	}
-
 	public void showPage(Player player, int page) {
 		plugin.getMessenger().sendInfo(
 				player,
