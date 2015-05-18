@@ -1,7 +1,5 @@
 package de.xcraft.INemesisI.BreedLimit;
 
-import net.milkbowl.vault.economy.Economy;
-
 import org.bukkit.plugin.RegisteredServiceProvider;
 
 import de.xcraft.INemesisI.BreedLimit.Manager.CommandManager;
@@ -65,18 +63,5 @@ public class XcraftBreedLimit extends XcraftPlugin {
 	@Override
 	public Messenger getMessenger() {
 		return messenger;
-	}
-
-	public Economy getEconomy() {
-		return economy;
-	}
-
-	private boolean setupEconomy() {
-		RegisteredServiceProvider<Economy> economyProvider = this.getServer().getServicesManager()
-				.getRegistration(net.milkbowl.vault.economy.Economy.class);
-		if (economyProvider != null) {
-			economy = economyProvider.getProvider();
-		}
-		return economy != null;
 	}
 }
