@@ -1,8 +1,6 @@
 package de.xcraft.INemesisI.BreedLimit.Manager;
 
 import de.xcraft.INemesisI.BreedLimit.Command.TypeUsage;
-import de.xcraft.INemesisI.BreedLimit.Command.Licence.BuyLicenceCommand;
-import de.xcraft.INemesisI.BreedLimit.Command.Licence.ListLicencesCommand;
 import de.xcraft.INemesisI.BreedLimit.Command.Scan.PageCommand;
 import de.xcraft.INemesisI.BreedLimit.Command.Scan.ScanCommand;
 import de.xcraft.INemesisI.BreedLimit.Command.Scan.TpCommand;
