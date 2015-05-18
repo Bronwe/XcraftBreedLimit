@@ -1,5 +1,5 @@
 name: XcraftBreedLimit
-version: 1.3.2
+version: 1.3.3
 author: INemesisI
 description: Requires XcraftLibrary v1.6.0
 
@@ -12,13 +12,9 @@ softdepend: [Vault]
 commands:
   breedlimit:
     aliases: bl
-  licence: 
-    aliases: l
     
 permissions:
     XcraftBreedLimit.Scan:
-        default: op
-    XcraftBreeLimit.Licence:
         default: op
     XcraftBreedLimit.Exempt:
         default: op
