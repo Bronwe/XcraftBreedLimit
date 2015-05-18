@@ -72,8 +72,8 @@ public class EventListener extends XcraftEventListener {
 
 	@EventHandler
 	public void onPlayerInteractEntity(PlayerInteractEntityEvent event) {
-		if (event.getPlayer().hasPermission("breedlimit.exempt")) {
-			;// return;
+		if (event.getPlayer().hasPermission("XcraftBreedLimit.exempt")) {
+			return;
 		}
 		if (event.isCancelled())
 			return;
