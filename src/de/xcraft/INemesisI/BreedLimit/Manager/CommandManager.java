@@ -18,14 +18,10 @@ public class CommandManager extends XcraftCommandManager {
 	@Override
 	protected void registerCommands() {
 		registerBukkitCommand("breedlimit");
-		registerBukkitCommand("licence");
 
 		registerCommand(new ScanCommand(this, "breedlimit", "scan", "s.*", "<KEY> ...", "Scans for chunks with # entities", "XcraftBreedLimit.Scan"));
 		registerCommand(new TpCommand(this, "breedlimit", "tp", "t.*", "<#>", "Teleports you to entry <#>", "XcraftBreedLimit.Scan"));
 		registerCommand(new PageCommand(this, "breedlimit", "page", "p.*", "<#>", "Shows page <page>", "XcraftBreedLimit.Scan"));
-		registerCommand(new ListLicencesCommand(this, "licence", "list", "l.*", "", "lists all current licences", "XcraftBreedLimit.Licence"));
-		registerCommand(new BuyLicenceCommand(this, "licence", "buy", "b.*", "<Animal> [quantity]", "buy a licence for an animal",
-				"XcraftBreedLimit.Licence"));
 
 		registerUsage(new TypeUsage());
 
